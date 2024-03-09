@@ -3,13 +3,17 @@ let page = document.getElementById('page');
 let soundActive = document.getElementById('soundActive');
 let soundInactive = document.getElementById('soundInactive');
 
+setInterval(myTimer, 1000);
 
 
+function myTimer() {
+     const d = new Date();
+     document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
 
 startbtn.addEventListener("click",function(){
 
-     console.log("test");
-     console.log(startbtn.className);
+
 
      if(startbtn.className == "active"){
 
@@ -36,8 +40,6 @@ page.addEventListener("click",function(){
 
 soundActive.addEventListener("click",function(){
 
-     console.log("clock");
-     console.log(soundActive.style.display);
      
      if( soundActive.style.display == 'block'){
      
@@ -48,8 +50,6 @@ soundActive.addEventListener("click",function(){
 
 soundInactive.addEventListener("click",function(){
 
-     console.log("clock");
-     console.log(soundInactive.style.display);
      
      if( soundInactive.style.display == 'block'){
      
