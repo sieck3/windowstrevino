@@ -15,12 +15,12 @@
 
     <article class="desktop">
 
-        <section >
-            <a href="https://sieck3.github.io/Js/memoire" target="_blank"  class="shortcut">
+        <section class="shortcut" id="pokemon_icon">
+            <!-- <a href="" target="_blank"  class="shortcut"> -->
 
                 <img src="img/Daco_4475114.png" alt=""/>
                 <label>Pokemon Game</label>
-            </a>
+            <!-- </a> -->
         </section>
 <!-- 
         <section class="shortcut">
@@ -50,6 +50,22 @@
         </section> -->
         
     </article>
+    <div class="app_container"id="app_container" >
+
+        <div class="app_header">
+            <img src="img/Daco_4475114.png" alt=""/>
+            <label >Pokemon</label>
+            <div>
+                <!-- <button>_</button>
+                <button>&#x25A1;</button> -->
+                <button id="app_close_btn">X</button>
+            </div>
+           
+
+        </div>
+        <iframe src="https://sieck3.github.io/Js/memoire"  class="app_frame"  allow="fullscreen"></iframe>
+    </div>
+
     
 
     <nav>
@@ -66,13 +82,12 @@
                     <!-- barras -->         
           </div>
 
-
           <div class="clock-active clock-inactive"> 
                <!-- reloj -->         
                <div >
                 <img src="img/loudspeaker_rays.png" alt="" id="soundActive" style="display: block;"/>
                 <img src="img/loudspeaker_muted.png" alt="" id="soundInactive" style="display: none;"/>
-                <label id="clock"></label>
+                <label id="clock">0:00:00</label>
 
                </div>
           </div>

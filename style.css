@@ -138,6 +138,7 @@ flex:2;
      left: 2px;
      bottom: 38px;
      display: flex;
+     z-index: 2;
    
 }
 
@@ -229,10 +230,80 @@ flex:2;
      align-items: center;
      text-align: center;
      text-decoration: none;
+     cursor: pointer;
+}
+
+.shortcut label{
+   
+     cursor: pointer;
 }
 
 .shortcut img{
      height: 80px;
      width: 60px;
      padding: 8px;
+}
+
+/*Pokemon Frame*/
+
+.app_container{
+     width: 90%;
+     height: 80%;
+     position: absolute;
+     background-color: #c3c3c3;
+     top:5%;
+     left: 5%;
+     z-index: 1;
+     border-top: 2px solid white;
+     border-left: 2px solid white;
+     -webkit-box-shadow: 2px 2px 0px 0px #000000; 
+     box-shadow: 2px 2px 0px 0px #000000;
+     padding-top: 0;
+     margin-top: 0;
+     display: none;
+}
+
+.app_frame{
+     width: 99%;
+     height: 95%;
+     margin: 0.2%;
+     background-color: white;
+     border: 1px solid black;
+     padding-top: 0;
+     margin-top: 0;
+     zoom: 50%;
+}
+
+.app_header{
+     display: flex;
+     color: white;
+     background-color: #000CDA;
+     border-bottom: #c3c3c3 1px solid;
+     
+     /* flex-direction: row-reverse;
+     padding: 2px; */
+}
+
+.app_header img{
+     
+     width: 20px;
+     height: 20px;
+margin: 2px;
+}
+
+.app_header label{
+     
+     width: 20px;
+     height: 20px;
+     flex: 2;
+     padding: 2px;
+
+}
+.app_header div{
+     padding: 2px;
+}
+.app_header div button{
+
+     font-weight: bold;
+  
 }

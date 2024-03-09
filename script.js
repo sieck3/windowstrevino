@@ -3,7 +3,26 @@ let page = document.getElementById('page');
 let soundActive = document.getElementById('soundActive');
 let soundInactive = document.getElementById('soundInactive');
 let clock =  document.getElementById("clock");
+let pokemon_icon = document.getElementById('pokemon_icon');
+let app_container = document.getElementById('app_container');
 
+let app_close_btn = document.getElementById('app_close_btn');
+
+app_close_btn.addEventListener(
+     "click",
+     function(){
+          console.log('none');
+          app_container.style.display = 'none';
+     }
+);
+
+pokemon_icon.addEventListener(
+     "click",
+     function(){
+          console.log('on');
+          app_container.style.display = 'block';
+     }
+);
 
 function myTimer() {
      const d = new Date();
