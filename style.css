@@ -77,6 +77,8 @@ nav button div{
 
 
 
+
+
 /*
 CLOCK
 */
@@ -125,6 +127,13 @@ flex:2;
      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7))
 }
 
+
+/*MENU TOOLS*/
+
+
+
+
+
 .tools{
      border-top: 2px solid white;
      border-left: 2px solid white;
@@ -133,19 +142,31 @@ flex:2;
      background-color: #c3c3c3;
 
      width: 280px;
-     height: 500px;
+     height: 550px;
      position: absolute;
      left: 2px;
      bottom: 38px;
-     display: flex;
      z-index: 2;
-   
+     display: flex;
+     display: none;
+  
 }
+
+.on{
+     animation: slideaway 400ms;
+     display: flex;
+}
+
+@keyframes slideaway {
+     from { display: none; opacity: 0; transform: translateY(30px);}
+     to { transform: translateY(-0px); }
+}
+
 
 .icon-tools{
 
      background-color: #000CDA;
-     width: 20%;
+     width: 15%;
      height: 100%;
      display:flex;
      flex-direction: column-reverse;
@@ -155,6 +176,8 @@ flex:2;
 
     width: 100%;
 }
+
+
 
 .menu-tools{
   
@@ -169,33 +192,29 @@ flex:2;
 
      display: flex;
      align-items: center;
-     height: 10%;
-     width: 95%;
      font-size: 20px;
      font-family: monospace;
-   padding-left: 2px;
+     padding-left: 2px;
    
 
 }
+
+.item-tools-1 *{
+
+     padding-left: 10px;
+     padding-top: 10px;
+
+}
+
+
+
 
 .item-tools-1:hover{
      background-color: #000CDA;
      color:white;
 
 }
-.item-tools-1 img{
-     
-     padding: 2px;
-   
 
-}
-
-.item-tools-1 label{
-     
-     padding: 5px;
-   
-
-}
 
 .line{
      width: 90%;
@@ -204,18 +223,22 @@ flex:2;
 
 .flecha{
      width: 25px;
-     height: 25px;
+     padding: 0;
 }
 
-.item{
-    justify-content:space-between;
+.item div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
+
+
+
+
 
 .desktop{
      width: 95%;
-     margin: auto;
      display: flex;
-     padding: 2%;
      color: white;
      font-size: 18px;
 
@@ -244,7 +267,7 @@ flex:2;
      padding: 8px;
 }
 
-/*Pokemon Frame*/
+/*APP Frame*/
 
 .app_container{
      width: 90%;
@@ -288,7 +311,7 @@ flex:2;
      
      width: 20px;
      height: 20px;
-margin: 2px;
+     margin: 2px;
 }
 
 .app_header label{
@@ -306,4 +329,9 @@ margin: 2px;
 
      font-weight: bold;
   
+}
+
+
+.hidden{
+     visibility: hidden;
 }

@@ -11,7 +11,6 @@ let app_close_btn = document.getElementById('app_close_btn');
 app_close_btn.addEventListener(
      "click",
      function(){
-          console.log('none');
           app_container.style.display = 'none';
      }
 );
@@ -19,14 +18,12 @@ app_close_btn.addEventListener(
 pokemon_icon.addEventListener(
      "click",
      function(){
-          console.log('on');
           app_container.style.display = 'block';
      }
 );
 
 function myTimer() {
      const d = new Date();
-     console.log(d.toLocaleTimeString());
      clock.innerHTML = d.toLocaleTimeString();
 }
 
@@ -40,14 +37,15 @@ startbtn.addEventListener("click",function(){
      if(startbtn.className == "active"){
 
           startbtn.className = "start";
-          page.style.display = "none";
-
+          page.classList.remove('on');
 
      }else{
 
           startbtn.className = "active";
-          page.style.display = "flex";
-
+          console.log( page.style);
+          // page.style.display = "flex";
+          page.classList.add('on');
+          console.log( page);
      }
 
 
