@@ -2,14 +2,17 @@ let startbtn = document.getElementById('start');
 let page = document.getElementById('page');
 let soundActive = document.getElementById('soundActive');
 let soundInactive = document.getElementById('soundInactive');
-
-setInterval(myTimer, 1000);
+let clock =  document.getElementById("clock");
 
 
 function myTimer() {
      const d = new Date();
-     document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+     console.log(d.toLocaleTimeString());
+     clock.innerHTML = d.toLocaleTimeString();
 }
+
+setInterval(myTimer, 1000);
+
 
 startbtn.addEventListener("click",function(){
 
