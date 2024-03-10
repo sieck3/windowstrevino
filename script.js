@@ -4,6 +4,7 @@ let soundActive = document.getElementById('soundActive');
 let soundInactive = document.getElementById('soundInactive');
 let clock =  document.getElementById("clock");
 let pokemon_icon = document.getElementById('pokemon_icon');
+let pokemon_task = document.getElementById('pokemon_task');
 let app_container = document.getElementById('app_container');
 
 let app_close_btn = document.getElementById('app_close_btn');
@@ -12,6 +13,7 @@ app_close_btn.addEventListener(
      "click",
      function(){
           app_container.style.display = 'none';
+          pokemon_task.style.display = 'none';
      }
 );
 
@@ -19,8 +21,13 @@ pokemon_icon.addEventListener(
      "click",
      function(){
           app_container.style.display = 'block';
+          pokemon_task.style.display = 'flex';
+
      }
 );
+
+
+
 
 function myTimer() {
      const d = new Date();

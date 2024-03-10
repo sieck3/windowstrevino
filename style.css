@@ -95,10 +95,48 @@ nav button div{
 CLOCK
 */
 
-.task{
-flex:2;
+.task{ 
 
+     flex:2;
+     margin: 0px 10px;
+     display: flex;
+     /* display: none; */
+   
 }
+
+@keyframes slidetask {
+     from { display: none; opacity: 0; transform: translateX(-30px);}
+     to { transform: translateX(0px); }
+}
+
+.task-margin{
+
+     border-top: 1px solid black;
+     border-left: 1px solid black;
+     border-right: 1px solid white;
+     border-bottom: 1px solid white;
+     margin: 2px;
+     display: flex;
+     background-color: #b4b6b8;
+     align-items: center;
+     font-family:  "Windows Regular";
+     font-weight: bold;
+     width: 170px;
+     display: none;
+     animation: slidetask 400ms;
+    
+}
+
+.task-margin *{
+     padding: 2px 4px;
+}
+
+.task-margin img{
+     width: 30px;
+     /* padding: 2px; */
+}
+
+
 
 
 .clock-active{
@@ -112,15 +150,15 @@ flex:2;
 
 .clock-active div{
      width: 100px;
+     height: 70%;
+     padding: 2px;
+     display: flex;
+     align-items: center;
+
      border-top: solid 1px grey;
      border-left: gray 1px solid;
      border-bottom: white 1px solid;
      border-right: 1px solid white;
-     height: 70%;
-     padding: 2px;
-     
-     display: flex;
-     align-items: center;
     
 }
 
@@ -280,14 +318,18 @@ flex:2;
 }
 
 /*APP Frame*/
+@keyframes slideapp {
+     from { display: none; opacity: 0; transform: translateY(-30px);}
+     to { transform: translateY(0px); }
+}
 
 .app_container{
-     width: 90%;
+     width: 60%;
      height: 80%;
      position: absolute;
      background-color: #c3c3c3;
      top:5%;
-     left: 5%;
+     left: 8%;
      z-index: 1;
      border-top: 2px solid white;
      border-left: 2px solid white;
@@ -298,6 +340,7 @@ flex:2;
      display: none;
      font-family:  "Windows Regular";
      font-weight: bold;
+     animation: slideapp 600ms;
 }
 
 .app_frame{
@@ -366,4 +409,4 @@ flex:2;
 
           width: 28px;
      }
-   }
+}
