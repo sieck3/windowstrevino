@@ -4,29 +4,57 @@ let soundActive = document.getElementById('soundActive');
 let soundInactive = document.getElementById('soundInactive');
 let clock =  document.getElementById("clock");
 let pokemon_icon = document.getElementById('pokemon_icon');
-let pokemon_task = document.getElementById('pokemon_task');
+let toolbar_task = document.getElementById('toolbar_task');
 let app_container = document.getElementById('app_container');
+let frame = document.getElementById('frame');
 
+let snake_icon = document.getElementById('snake_icon');
+let snake_task = document.getElementById('snake_task');
 let app_close_btn = document.getElementById('app_close_btn');
 
-app_close_btn.addEventListener(
+let header_icon = document.getElementById('header_icon');
+let header_title = document.getElementById('header_title');
+let toolbar_icon = document.getElementById('toolbar_icon');
+let toolbar_title = document.getElementById('toolbar_title');
+
+snake_icon.addEventListener(
      "click",
      function(){
-          app_container.style.display = 'none';
-          pokemon_task.style.display = 'none';
+          app_container.style.display = 'block';
+          frame.src = 'https://sieck3.github.io/Js/snake';
+          header_icon.src = 'img/snakes.png';
+          header_title.innerHTML = 'Snake Game';
+          toolbar_icon.src = 'img/snakes.png';
+          toolbar_task.style.display = 'flex';
+          toolbar_title.innerHTML = 'Snake Game';
      }
 );
+
+
+
+
 
 pokemon_icon.addEventListener(
      "click",
      function(){
           app_container.style.display = 'block';
-          pokemon_task.style.display = 'flex';
+          toolbar_task.style.display = 'flex';
+          frame.src = 'https://sieck3.github.io/Js/memoire';
+          header_icon.src = 'img/Daco_4475114.png';
+          header_title.innerHTML = 'Pokemon Game';
+          toolbar_icon.src = 'img/Daco_4475114.png';
+          toolbar_title.innerHTML = 'Pokemon Game';
 
      }
 );
 
-
+app_close_btn.addEventListener(
+     "click",
+     function(){
+          app_container.style.display = 'none';
+          toolbar_task.style.display = 'none';
+     }
+);
 
 
 function myTimer() {

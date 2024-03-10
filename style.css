@@ -341,6 +341,7 @@ CLOCK
      font-family:  "Windows Regular";
      font-weight: bold;
      animation: slideapp 600ms;
+     resize: both;
 }
 
 .app_frame{
@@ -389,6 +390,14 @@ CLOCK
      visibility: hidden;
 }
 
+.shortcut-active{
+
+     display: flex;
+}
+.shortcut-active2{
+
+     display: none;
+}
 
 
 @media (max-width: 800px) {
@@ -408,5 +417,15 @@ CLOCK
      .item-tools-1>img{
 
           width: 28px;
+     }
+
+     .shortcut-active{
+
+          display: none;
+     }
+
+     .shortcut-active2{
+
+          display: flex;
      }
 }

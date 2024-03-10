@@ -12,13 +12,35 @@
 
     <article class="desktop">
 
-        <section class="shortcut" id="pokemon_icon">
+        <section class="shortcut shortcut-active" id="pokemon_icon">
 
                 <img src="img/Daco_4475114.png" alt=""/>
                 <label>Pokemon Game</label>
         </section>
 
-        
+        <section class="shortcut shortcut-active" id="snake_icon">
+
+            <img src="img/snakes.png" alt=""/>
+            <label>Snake Game</label>
+        </section>
+
+        <a href="https://sieck3.github.io/Js/memoire" target="_blank" 
+        style="text-decoration: none; color: white;">
+        <section class="shortcut shortcut-active2" >
+
+            <img src="img/Daco_4475114.png" alt=""/>
+            <label>Pokemon Game</label>
+        </section>
+        </a>
+
+        <a href="https://sieck3.github.io/Js/snake" target="_blank" 
+        style="text-decoration: none; color: white;">
+        <section class="shortcut shortcut-active2">
+
+            <img src="img/snakes.png" alt=""/>
+            <label>Snake Game</label>
+        </section>
+        </a>
     </article>
 
     <article class="desktop">
@@ -31,21 +53,19 @@
         
     </article>
 
-    <div class="app_container"id="app_container" >
+    <div class="app_container" id="app_container" >
 
         <div class="app_header">
-            <img src="img/Daco_4475114.png" alt=""/>
-            <label >Pokemon Game</label>
+            <img src="img/Daco_4475114.png" id="header_icon" alt=""/>
+            <label id="header_title">Pokemon Game</label>
             <div>
                 <img id="app_close_btn" src="img/close.png" alt="">
             </div>
            
 
         </div>
-        <iframe src="https://sieck3.github.io/Js/memoire"  class="app_frame"  allow="fullscreen"></iframe>
+        <iframe src="https://sieck3.github.io/Js/memoire" id="frame" class="app_frame"  allow="fullscreen"></iframe>
     </div>
-
-    
 
     <nav>
           <button class="start" id="start">
@@ -59,14 +79,12 @@
 
           <div class="task"> 
            
-            <div class="task-margin" id="pokemon_task">
+            <div class="task-margin" id="toolbar_task">
              
-                <img src="img/Daco_4475114.png" alt=""/>
-                <label>Pokemon Game</label>
+                <img src="img/Daco_4475114.png" alt="" id="toolbar_icon"/>
+                <label id="toolbar_title">Pokemon Game</label>
 
             </div>
-
-        
 
                     <!-- barras -->         
           </div>
