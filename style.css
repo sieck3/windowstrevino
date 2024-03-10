@@ -291,13 +291,12 @@ CLOCK
      display: flex;
      color: white;
      font-size: 20px;
-     margin: 40px;
 
 }
+
 .shortcut{
      height: 80px;
-     width: 150px;
-     margin: 20px;
+     width: 140px;
      display: flex;
      justify-content: center;
      flex-direction: column;
@@ -305,6 +304,7 @@ CLOCK
      text-align: center;
      text-decoration: none;
      cursor: pointer;
+     margin-top: 30px;
 }
 
 .shortcut label{
@@ -315,7 +315,7 @@ CLOCK
 .shortcut img{
      height: 80px;
      width: 60px;
-     padding: 8px;
+     /* padding: 8px; */
 }
 
 /*APP Frame*/
